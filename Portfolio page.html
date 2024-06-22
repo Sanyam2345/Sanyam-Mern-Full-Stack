@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background:#333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    opacity: 100%;    
+    background-image: url(data:image/jpeg;base64,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);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border-style: double;
+    padding: 2px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url(data:image/jpeg;base64,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);
+}
+</style>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpeg" alt="My Photo">
+        <p>Hello! I am Sanyam, a web developer with a passion for creating beautiful and functional websites.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One</h3>
+            <img src="project1.jpg" alt="Project One">
+            <p>I created a student personal information form using HTML and CSS, featuring a responsive and user-friendly design. The form includes fields for name, email, password, gender, date of birth, and address. It incorporates validation and accessibility features to ensure a seamless user experience. The form is visually appealing, with a background image and styled input fields, enhancing the overall user interaction on the webpage.</p>
+        </div>
+        <!-- <div class="project">
+            <h3>Project Two</h3>
+            <img src="project2.jpg" alt="Project Two">
+            <p>A brief description of Project Two.</p>
+        </div>
+        <div class="project">
+            <h3>Project Three</h3>
+            <img src="project3.jpg" alt="Project Three">
+            <p>A brief description of Project Three.</p>
+        </div> -->
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sanyam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
